@@ -14,6 +14,7 @@ export default function Home() {
 
   async function getData(){
     const n = demoAction();
+    console.log(n);
     setNum((p)=>n);
     console.log(num);
   }
