@@ -13,7 +13,7 @@ export default function Home() {
   },[num])
 
   async function getData(){
-    const n = demoAction();
+    const n = await demoAction();
     console.log(n);
     setNum((p)=>n);
     console.log(num);
