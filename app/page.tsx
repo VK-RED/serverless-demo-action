@@ -8,6 +8,10 @@ export default function Home() {
     getData();
   },[])
 
+  useEffect(()=>{
+    console.log(`num has been changed and it is ${num}`);
+  },[num])
+
   async function getData(){
     const n = demoAction();
     setNum((p)=>n);
